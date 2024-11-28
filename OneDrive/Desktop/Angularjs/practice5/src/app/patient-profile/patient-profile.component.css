@@ -1,0 +1,96 @@
+
+.cont{
+  height: 60vh;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-top: 10vh;
+}
+.user-display{
+  padding-left: 2%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  height: 51vh;
+  padding-top: 25%;
+  background-image: url('/assets/images/doctor2.avif');
+  background-size: cover;
+
+ 
+}
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #ddd; 
+  margin-top: 28%;
+}
+.user-display-bottom{
+  display: flex;
+}
+.user-display-info{
+  margin-left: 2%;
+  margin-top: 6%;
+}
+.user-display-info .name{
+  font-size: 16.5px;
+  font-weight: 600;
+}
+.user-display-info .nick{
+  font-size: 14.5px;
+}
+
+/*********************************/
+.profile-container {
+  margin: 20px;
+
+}
+.profile{
+  padding-top: 100px;
+}
+.patient-profile {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.profile-info {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+/************************/
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+}

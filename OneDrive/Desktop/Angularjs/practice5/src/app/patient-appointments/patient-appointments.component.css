@@ -1,0 +1,32 @@
+.patient-appointments {
+  background-image: url('/assets/images/b.jpg');  
+  background-size: cover;
+  padding-bottom: 200px;
+  padding-top: 50px;
+}
+
+h2{
+  color: #5b5858;
+  margin-top: 5%;
+}
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #218838;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #f1f1f1;
+}

@@ -1,0 +1,80 @@
+.patient-home {
+  padding: 50px;
+  background-image: url('/assets/images/img1.webp');
+  background-size: cover;
+  background-position: center;
+}
+.patient-home h2 {
+  font-size: 28px;
+}
+.search-section input, .search-section select {
+  padding: 10px;
+  margin-right: 10px;
+  width: 25%;
+  height: 50px;
+  border-radius: 20px;  
+  padding: 10px 25px;
+  font-size: 16px;
+  outline: none;
+ border: none;
+}
+.search-section button{
+  width: 100px;
+  height: 48px;
+  border-radius: 15px;
+  margin-left: 5px;
+}
+.top-doctors-container{
+  margin-top: 100px;
+
+}
+.top-doctors {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.doctor-card {
+  background-color: #cbcb0c;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  justify-content: space-between;
+  width: 330px;
+  height: 220px;
+  margin-top: 20px;
+  box-shadow: 0 14px 18px rgba(10,10, 10, 0.5);
+
+}
+.doctor-card:hover{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgb(223, 12, 12);
+}
+
+.doctor-card h4 {
+  margin-top: 10px;
+  font-size: 1.7rem;
+  color: #141413;
+}
+
+.doctor-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.doctor-card button:hover {
+  background-color: #0056b3;
+}
+
+.blog-section {
+  margin-top: 30px;
+}
+.blog-section a {
+  color: #007bff;
+  text-decoration: none;
+}
+

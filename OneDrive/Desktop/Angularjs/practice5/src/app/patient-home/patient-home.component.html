@@ -1,0 +1,26 @@
+<div class="patient-home pt-5 pb-5">
+  <h2 class="text-center pt-5 pb-4">Welcome to the Patient Portal</h2>
+
+  <div class="search-section text-center">
+    <input [(ngModel)]="searchQuery" placeholder="Search for doctors..." />
+
+    <select [(ngModel)]="selectedSpecialty">
+      <option value="">Select Specialty</option>
+      <option *ngFor="let specialty of specialties" [value]="specialty">{{ specialty }}</option>
+    </select>
+    
+    <button class="btn btn-success">Search</button>
+  </div>
+
+  <div div class="top-doctors-container">
+    <h2 class="text-center">Top Doctors</h2>
+    <div class="top-doctors mb-5">
+      <div *ngFor="let doctor of topDoctors" class="doctor-card">
+        <h4>{{ doctor.name }}</h4>
+        <p>{{ doctor.hospital }}</p>
+        <p>{{ doctor.rating}}</p>
+        <p>{{ doctor.specialty }}</p>
+      </div>
+    </div>
+  </div>
+</div>
