@@ -1,0 +1,166 @@
+/* Container styling */
+.container {
+  max-width: 600px;
+  margin-top: 40px;
+}
+
+/* Title styling */
+h4 {
+  color: #007bff;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* List group styling for notifications */
+.list-group-item {
+  position: relative;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #ffffff, #f7f9fc);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Notification hover effect */
+.list-group-item:hover {
+  transform: scale(1.03);
+  background-color: #f1f6f9;
+  cursor: pointer;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the Dismiss button */
+.btn-outline-danger {
+  border-radius: 25px;
+  padding: 6px 15px;
+  font-weight: bold;
+  background-color: transparent;
+  border-color: #e74c3c;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Button hover and focus effects */
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+  background-color: #e74c3c;
+  color: white;
+  border-color: #c0392b;
+}
+
+/* Icon styling inside notifications */
+.list-group-item .bi {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Styling for notification types */
+.alert-info {
+  background: linear-gradient(135deg, #e9f7fe, #b0e0f0);
+  border-color: #b0e0f0;
+  color: #17a2b8;
+}
+
+.alert-info .list-group-item {
+  background: linear-gradient(135deg, #e9f7fe, #c7e0f7);
+}
+
+.alert-success {
+  background: linear-gradient(135deg, #d4edda, #c3e6cb);
+  border-color: #c3e6cb;
+  color: #28a745;
+}
+
+.alert-success .list-group-item {
+  background: linear-gradient(135deg, #d4edda, #b1e6c4);
+}
+
+.alert-danger {
+  background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+  border-color: #f5c6cb;
+  color: #dc3545;
+}
+
+.alert-danger .list-group-item {
+  background: linear-gradient(135deg, #f8d7da, #f1b1b1);
+}
+
+.alert-warning {
+  background: linear-gradient(135deg, #fff3cd, #ffeeba);
+  border-color: #ffeeba;
+  color: #856404;
+}
+
+.alert-warning .list-group-item {
+  background: linear-gradient(135deg, #fff3cd, #ffec99);
+}
+
+/* Styling for comment notifications */
+.alert-comment {
+  background: linear-gradient(135deg, #cfe2f3, #a9cce3);
+  border-color: #a9cce3;
+  color: #004085;
+}
+
+.alert-comment .list-group-item {
+  background: linear-gradient(135deg, #cfe2f3, #b8daff);
+}
+
+/* Styling for like notifications */
+.alert-like {
+  background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+  border-color: #f5c6cb;
+  color: #dc3545;
+}
+
+.alert-like .list-group-item {
+  background: linear-gradient(135deg, #f8d7da, #f1b1b1);
+}
+
+/* Text muted styling for timestamp */
+.text-muted {
+  font-size: 12px;
+  opacity: 0.7;
+  font-style: italic;
+  margin-left: 10px;
+}
+
+/* Fade-in animation for new notifications */
+.fadeInUp {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dismissed notifications */
+.list-group-item .dismissed {
+  background-color: #e9ecef;
+  color: #6c757d;
+  text-decoration: line-through;
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .list-group-item {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

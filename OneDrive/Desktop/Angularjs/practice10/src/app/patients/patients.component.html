@@ -1,0 +1,23 @@
+<div class="doctors">
+  <h2 class="page-title">Patients</h2>
+  <div class="table-container">
+    <table class="table table-responsive table-sm table-success table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let patient of patients">
+          <td>{{ patient.id }}</td>
+          <td>{{ patient.name }}</td>
+          <td>{{ patient.age }}</td>
+          <td>{{ patient.gender }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,250 @@
+/* Container padding for better spacing */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling for table container to ensure it's well-spaced */
+.table-responsive {
+  margin-top: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Ensure smooth scrolling on iOS */
+}
+
+/* General styling for table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Styling for table header */
+th {
+  text-align: center;
+  font-weight: bold;
+  background-color: #343a40;
+  color: white;
+  padding: 15px;
+}
+
+/* General styling for table cells */
+td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px;
+  font-size: 14px;
+}
+
+/* Add alternating row colors for better readability */
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Styling for status badges */
+.badge {
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 12px;
+}
+
+/* Badge colors based on appointment status */
+.badge-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.badge-warning {
+  background-color: #ffc107;
+  color: white;
+}
+
+.badge-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Button styling */
+.btn {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+  background-color: #5a6268;
+  transform: scale(1.05);
+}
+
+.btn-warning {
+  background-color: #ff9800;
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: #e68900;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  /* Table header and cell adjustments for better spacing on smaller screens */
+  .table th, .table td {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  /* Button adjustments */
+  .btn {
+    padding: 6px 15px;
+    font-size: 12px;
+  }
+
+  /* Heading font size */
+  h2 {
+    font-size: 20px;
+  }
+
+  /* Stack buttons vertically on mobile */
+  .table td button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  /* Ensure the table doesn't overflow horizontally */
+  .table-responsive {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Very small screens (phones) */
+@media (max-width: 576px) {
+  .table th, .table td {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  .table {
+    font-size: 12px;
+  }
+
+  /* Adjust the overall container padding */
+  .container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 5px 12px;
+    font-size: 10px;
+  }
+}
+
+/* Ensure the table has a consistent height on all screen sizes */
+@media (min-width: 992px) {
+  .table th,
+  .table td {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+/* Add shadow for a more polished look */
+.table, .btn, .badge {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styling for hoverable rows */
+.table tr:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Make sure the header and footer stay aligned */
+table td, table th {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Add smooth transition for hover */
+.table tr {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-2px);
+}
+
+/* Styling for the action buttons and spacing */
+.table td button {
+  margin: 5px;
+}
+
+/* Refining header font styles */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #343a40;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+/* Mobile-First Design: Adjust tables for small screens */
+@media (max-width: 768px) {
+  .table {
+    font-size: 12px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .table td {
+    padding: 8px;
+    word-wrap: break-word;
+  }
+
+  .table td button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
